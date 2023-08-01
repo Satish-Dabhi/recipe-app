@@ -1,4 +1,4 @@
-import { Alert, Button, Card, CardActions, CardContent, CardMedia, Grid, IconButton, Snackbar, Typography } from '@mui/material';
+import { Alert, Button, Card, CardActions, CardContent, CardMedia, Grid, IconButton, Snackbar, Tooltip, Typography } from '@mui/material';
 import React from 'react';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import DetailsIcon from '@mui/icons-material/Details';
@@ -59,12 +59,22 @@ const RecipeCard = ({ recipe }) => {
             </Typography>
           </CardContent>
           <CardActions disableSpacing>
-            <Button variant="outlined" endIcon={<FavoriteIcon />} onClick={() => handleSaveRecipe(recipe)}>
-              Save
-            </Button>
-            <Button variant="outlined" endIcon={<DetailsIcon />} onClick={() => navigate(`/recipe/${recipe?.id}`)}>
-              Details
-            </Button>
+            <Tooltip title="Save">
+              <IconButton onClick={() => handleSaveRecipe(recipe)} style={{ color: 'red' }}>
+                <FavoriteIcon />
+              </IconButton>
+            </Tooltip>
+            <Typography
+              component="a"
+              href={`/recipe/${recipe?.id}`}
+              style={{ display: 'inline-flex', alignItems: 'center', cursor: 'pointer' }}
+            >
+              <div>
+                <Typography variant="subtitle1" component="span">
+                  Explore Recipe Details
+                </Typography>
+              </div>
+            </Typography>
           </CardActions>
         </Card>
       </Grid>

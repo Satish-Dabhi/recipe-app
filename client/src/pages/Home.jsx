@@ -49,7 +49,7 @@ const Home = () => {
                     alignItems="center"
                     style={{ height: '100vh' }}
                 >
-                    <Grid item xs={4} style={{ margin: '10px' }}>
+                    <Grid item md={4} style={{ margin: '10px' }}>
                         <SearchComponent searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
                     </Grid>
 

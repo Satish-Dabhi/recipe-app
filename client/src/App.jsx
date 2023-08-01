@@ -6,6 +6,7 @@ import SavedRecipes from './components/recipe/SavedRecipes';
 import Auth from './pages/Auth';
 import Home from './pages/Home';
 import RecipeDetails from './pages/RecipeDetails';
+import Footer from './components/Footer';
 
 const App = () => {
 
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="*" element={<Navigate to="/" replace />} />
 
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

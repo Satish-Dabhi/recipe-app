@@ -52,7 +52,7 @@ function Navbar() {
                             textDecoration: 'none',
                         }}
                     >
-                        HOME
+                        RECIPE APP
                     </Typography>
 
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -97,7 +97,7 @@ function Navbar() {
                         variant="h5"
                         noWrap
                         component="a"
-                        href=""
+                        href="/"
                         sx={{
                             mr: 2,
                             display: { xs: 'flex', md: 'none' },
@@ -109,7 +109,7 @@ function Navbar() {
                             textDecoration: 'none',
                         }}
                     >
-                        SATISH
+                        RECIPE APP
                     </Typography>
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                         {pages.map((page, index) => (
