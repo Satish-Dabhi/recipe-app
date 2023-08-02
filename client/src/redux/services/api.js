@@ -1,5 +1,5 @@
 export const API_HOSTNAME = 'http://localhost:3005';
-export const PROD_SERVER_URL = 'https://recipe-app-server-or12z1jl9-satish-dabhi.vercel.app';
+export const PROD_SERVER_URL = 'https://recipe-app-server-gold.vercel.app';
 export const GET_RECIPES_END_POINT = '/recipe/${query}';
 export const GET_RECIPE_DETAIL_BY_ID_END_POINT = '/recipe/detail/${id}';
 export const GET_RECIPE_INSTRUCTIONS_BY_ID_END_POINT = '/recipe/instructions/${id}';
