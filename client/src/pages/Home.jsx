@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import SearchComponent from '../components/SearchComponent';
 import RecipeCard from '../components/recipe/RecipeCard';
 import { getRecipes } from '../redux/recipe/recipeSlice';
-import { useScrollTrigger } from '@mui/material';
 
 const Home = () => {
 
@@ -13,7 +12,6 @@ const Home = () => {
     const [searchQuery, setSearchQuery] = useState('');
 
     const dispatch = useDispatch();
-
 
     useEffect(() => {
         dispatch(getRecipes('mix'));
@@ -26,18 +24,6 @@ const Home = () => {
     useEffect(() => {
         setRecipeData(recipes);
     }, [recipes]);
-
-    const trigger = useScrollTrigger({
-        target: window,
-        disableHysteresis: true,
-        threshold: 100,
-    });
-
-    useEffect(() => {
-        if (trigger && !recipesLoader) {
-            console.log("recipes,");
-        }
-    }, [trigger, recipesLoader]);
 
 
     return (

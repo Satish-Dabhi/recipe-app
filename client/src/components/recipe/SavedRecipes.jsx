@@ -16,7 +16,6 @@ const SavedRecipes = () => {
   }, [])
 
   useEffect(() => {
-    console.log("userByToken", userByToken);
     if (userByToken.status == 'OK') {
       setSaveRecipes(userByToken?.data?.recipes);
     }

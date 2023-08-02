@@ -1,12 +1,11 @@
+import { CircularProgress, Container } from '@mui/material';
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getInstructionsDetail, getRecipeDetail } from '../redux/recipe/recipeSlice';
 import { useParams } from 'react-router-dom';
-import { CircularProgress, Container } from '@mui/material';
+import { getInstructionsDetail, getRecipeDetail } from '../redux/recipe/recipeSlice';
 
 
 const RecipeDetails = () => {
-  console.log("////////////////");
   let { id } = useParams();
   const { recipeDetails, recipeDetailsLoader, recipeInstructionsDetails } = useSelector((store) => store.recipeHandler);
   const [recipeDetailData, setRecipeDetailData] = useState([]);
@@ -16,7 +15,6 @@ const RecipeDetails = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    console.log("....", id);
     dispatch(getRecipeDetail(id));
     dispatch(getInstructionsDetail(id));
   }, [id]);

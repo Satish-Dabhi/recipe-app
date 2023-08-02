@@ -21,8 +21,6 @@ const ProtectedRoute = () => {
         return <div>Loading...</div>;
     }
 
-    console.log("userLoggedIn", userLoggedIn);
-
     return userLoggedIn ? <Outlet /> : <Navigate to="/auth" />;
 };
 
