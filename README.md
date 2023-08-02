@@ -1,6 +1,6 @@
 # [Recipe Guru](https://recipe-app-eight-dusky.vercel.app/) 
 
-Recipe Rendezvous is an innovative web application designed for food enthusiasts seeking culinary inspiration and seamless recipe management.
+Recipe Guru is a unique website for food lovers who want to discover new recipes and easily manage their cooking ideas. It's a place where you can find inspiration for your next culinary adventure and keep all your favorite recipes organized.
 
 
 ## Tech Stack
