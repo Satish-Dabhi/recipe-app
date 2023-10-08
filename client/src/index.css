@@ -17,3 +17,10 @@ body li {
   margin-top: auto;
   flex-shrink: 0;
 }
+
+@media (max-width: 726px) {
+  .recipe-image {
+    width: 100%;
+    height: auto;
+  }
+}

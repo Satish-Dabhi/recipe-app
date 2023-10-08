@@ -42,7 +42,7 @@ const RecipeDetails = () => {
   return (
     <Container maxWidth="lg" >
       <h1>{recipeDetails.title}</h1>
-      <img src={recipeDetails.image} alt={recipeDetails.title} />
+      <img src={recipeDetails.image} alt={recipeDetails.title} className='recipe-image'/>
       <hr></hr>
       <h2>Recipe Ingredients:</h2>
       <h4>
